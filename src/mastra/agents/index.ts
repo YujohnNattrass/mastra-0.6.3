@@ -33,3 +33,9 @@ export const weatherAgent = new Agent({
     },
   }),
 });
+
+export const agentHello = new Agent({
+  name: 'Hello Agent',
+  instructions: 'You are a helpful assistant that greets the user.',
+  model: openai('gpt-4o'),
+})
